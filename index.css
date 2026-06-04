@@ -17,40 +17,25 @@ body{
     display: block;
 }
 
-.btn-info{
+.btn-instagram{
     position: absolute;
 
     /* Ajusta estos valores según dónde esté el botón en tu diseño */
-    top: 88.92%;
-    left: 81.75%;
+    top: 21.1%;
+    left: 9.4%;
 
-    width: 11%;
-    height: 5%;
+    width: 15%;
+    height: 2%;
 
-    border-radius: 15px;
-    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50px;
+    background-color: rgba(213, 41, 41, 0);
     transition: 0.3s;
 
     
 }
 
-.btn-info:hover{
-    background-color:rgba(255, 255, 255, 0.25);
+.btn-instagram:hover{
+    background-color:rgba(255, 255, 255, 0.399);
 
 }
-.btn-grado{
-    position: absolute;
-    top: 88.92%;
-    left: 65.2%;
 
-    width: 11%;
-    height: 5%;
-
-    border-radius: 15px; /* bordes redondeados */
-    background-color: rgba(255, 255, 255, 0); /* invisible */
-    transition: 0.3s;
-}
-
-.btn-grado:hover{
-    background-color: rgba(255, 255, 255, 0.25); /* blanco semitransparente */
-}
