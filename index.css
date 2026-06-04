@@ -1,41 +1,48 @@
 body{
     margin: 0;
-    display: flex;
-    justify-content: center;
 }
 
+/* CONTENEDOR */
 .contenedor{
     position: relative;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
 }
 
-.fondo{
+/* PC */
+.inicio{
     width: 100%;
-    height: 100%;
-    object-fit: cover;
     display: block;
 }
 
+/* MOBILE */
+.mobile{
+    width: 100%;
+    display: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px){
+    .inicio{ display: none; }
+    .mobile{ display: block; }
+}
+
+/* BOTÓN INSTAGRAM */
 .btn-instagram{
     position: absolute;
-
-    /* Ajusta estos valores según dónde esté el botón en tu diseño */
     top: 21.1%;
     left: 9.4%;
 
     width: 15%;
-    height: 2%;
+    height: 50px; /* importante: no 2% */
 
     border-radius: 50px;
-    background-color: rgba(213, 41, 41, 0);
+    background-color: transparent;
     transition: 0.3s;
 
-    
+    z-index: 10;
 }
 
 .btn-instagram:hover{
-    background-color:rgba(255, 255, 255, 0.399);
-
+    background-color: rgba(255, 255, 255, 0.4);
 }
-
