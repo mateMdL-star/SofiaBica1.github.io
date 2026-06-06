@@ -9,62 +9,68 @@ body{
     min-height: 100vh;
 }
 
-/* PC */
+/* IMAGEN PC */
 .inicio{
     width: 100%;
     display: block;
 }
 
-/* MOBILE */
+/* IMAGEN MÓVIL */
 .mobile{
     width: 100%;
     display: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 600px){
-    .inicio{ display: none; }
-    .mobile{ display: block; }
-}
-
-/* BOTÓN INSTAGRAM */
+/* BOTÓN */
 .btn-instagram{
     position: absolute;
+
+    /* POSICIÓN EN PC */
     top: 21.2%;
     left: 8.9%;
 
-    width: 16%;
-    height: 55px; /* importante: no 2% */
+    width: 220px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     border-radius: 50px;
-    background-color: red;
-    transition: 0.3s;
+    background-color: #557440;
 
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+
+    transition: 0.3s;
     z-index: 10;
 }
 
 .btn-instagram:hover{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(202, 58, 58, 0.4);
 }
 
-        @media (max-width: 376px) {
-    .btn-instagram {
-        top: 220px;
-        left: 37px;
-        width: 85px;
-        height: 25px
-        
-    }
-        }
+/* MÓVIL */
+@media (max-width: 600px){
 
-        @media (max-width: 360px) {
-    .btn-instagram {
-        top: 210px;
-        left: 33px;
-        width: 85px;
-        height: 25px
-        
+    .inicio{
+        display: none;
     }
+
+    .mobile{
+        display: block;
     }
-    
-    
+
+    .btn-instagram{
+        /* AJUSTA ESTOS VALORES A TU DISEÑO MÓVIL */
+        top: 27%;
+        left: 12%;
+
+        width: 180px;
+        height: 45px;
+
+        font-size: 22px;
+    }
+}
