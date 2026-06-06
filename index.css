@@ -30,14 +30,14 @@ body{
 /* BOTÓN INSTAGRAM */
 .btn-instagram{
     position: absolute;
-    top: 21.1%;
-    left: 9.4%;
+    top: 21.2%;
+    left: 8.9%;
 
-    width: 15%;
-    height: 50px; /* importante: no 2% */
+    width: 16%;
+    height: 55px; /* importante: no 2% */
 
     border-radius: 50px;
-    background-color: transparent;
+    background-color: red;
     transition: 0.3s;
 
     z-index: 10;
@@ -46,3 +46,25 @@ body{
 .btn-instagram:hover{
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+        @media (max-width: 376px) {
+    .btn-instagram {
+        top: 220px;
+        left: 37px;
+        width: 85px;
+        height: 25px
+        
+    }
+        }
+
+        @media (max-width: 360px) {
+    .btn-instagram {
+        top: 210px;
+        left: 33px;
+        width: 85px;
+        height: 25px
+        
+    }
+    }
+    
+    
