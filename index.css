@@ -64,13 +64,11 @@ body{
     }
 
     .btn-instagram{
-        /* AJUSTA ESTOS VALORES A TU DISEÑO MÓVIL */
-        top: 27%;
-        left: 12%;
+    top: 24%;
+    left: 10%;
 
-        width: 180px;
-        height: 45px;
+    width: 25%;
+    height: 28px;
 
-        font-size: 22px;
-    }
+    font-size: 18px;
 }
